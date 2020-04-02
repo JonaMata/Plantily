@@ -18,6 +18,8 @@ class CreateSeedsTable extends Migration
             $table->integer('plant_id');
             $table->foreign('plant_id')->references('id')->on('plants')->onDelete('cascade');
             $table->integer('amount');
+            $table->double('price');
+            $table->text('description');
             $table->timestamps();
         });
     }

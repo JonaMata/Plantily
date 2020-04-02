@@ -51,6 +51,16 @@ Route::prefix('plant')->name('plant.')->middleware('auth')->group(function() {
     Route::get('delete', 'PlantController@delete')->name('delete');
 });
 
+Route::prefix('seed')->name('seed.')->group(function() {
+    Route::get('{seed}', 'SeedController@index')->name('index');
+    //Authenticated routes
+    Route::middleware('auth')->group(function() {
+        Route::get('{seed}/edit', 'SeedController@edit')->name('edit');
+        Route::post('{seed}/edit', 'SeedController@store')->name('store');
+        Route::post('{plant}/create', 'SeedController@create')->name('create');
+    });
+});
+
 Route::prefix('json')->name('json.')->group(function() {
     Route::get('families','JsonController@families')->name('families');
     Route::get('genera', 'JsonController@genera')->name('genera');

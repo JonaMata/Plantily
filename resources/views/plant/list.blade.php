@@ -22,7 +22,7 @@
                                             <h4>{{ $plant->name }}</h4>
                                             <h6>Family: {{ $plant->genus->family->name }}</h6>
                                             <h6>Genus: {{ $plant->genus->name }}</h6>
-                                            <h6>Seeds: {{ $plant->seeds->sum('') }}</h6>
+                                            <h6>Seeds: {{ $plant->seeds->sum('amount') }}</h6>
                                         </div>
                                         <div class="card-footer">
                                             <a href="{{ route('plant.show', ['plant' => $plant]) }}" class="btn btn-primary">View</a>
