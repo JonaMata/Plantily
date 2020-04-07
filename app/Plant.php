@@ -19,8 +19,8 @@ class Plant extends Model
         return $this->belongsTo('App\Genus');
     }
 
-    public function seeds() {
-        return $this->hasMany('App\Seed');
+    public function children() {
+        return $this->hasMany('App\Child');
     }
 
     public function image() {
