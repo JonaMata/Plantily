@@ -1,6 +1,6 @@
 .master-header {
     margin-top: -10px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 66px);
     min-height: 500px;
     background-image: url('/images/plant-background-2.jpg');
     background-size: cover;
@@ -25,10 +25,15 @@
     @extend .text-white;
 }
 
+.badge-primary {
+    background-color: rgba($primary, 0.2) !important;
+    color: darken($primary, 10%) !important;
+}
+
 #navbar-brandname {
     display: inline;
     line-height: 30px;
-    font-size: 45px;
+    font-size: 40px;
     align-self: end;
     margin: 0 0 0 10px;
 
@@ -40,7 +45,7 @@
 #plant-image {
     margin-top: -10px;
     height: calc(100vh - 66px);
-    background-image: url('/images/plant-background.jpg');
+    background-image: url('/images/plant-background-3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
