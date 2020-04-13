@@ -11,15 +11,20 @@ class Plant extends Model
         'name', 'user_id', 'genus_id', 'birth', 'description', 'image'
     ];
 
-    public function user() {
+    protected $dates = ['birth'];
+
+    public function user()
+    {
         return $this->belongsTo('App\User');
     }
 
-    public function genus() {
+    public function genus()
+    {
         return $this->belongsTo('App\Genus');
     }
 
-    public function children() {
+    public function children()
+    {
         return $this->hasMany('App\Child');
     }
 
