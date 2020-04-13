@@ -55,8 +55,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('plant.list') }}">Plants</a>
                             </li>
-                            <li class="nav-item mr-4">
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('shop.index') }}">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">|</span>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"

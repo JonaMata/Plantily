@@ -30,6 +30,13 @@
     color: darken($primary, 10%) !important;
 }
 
+.border-left-custom {
+    border-left-width: 5px;
+    border-left-color: $primary;
+    border-left-style: solid;
+    padding-left: 5px;
+}
+
 #navbar-brandname {
     display: inline;
     line-height: 30px;

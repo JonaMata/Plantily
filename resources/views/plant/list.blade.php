@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mt-3">
-                <h3 class="d-inline">Your plants</h3>
+                <h3 class="d-inline border-left-custom">Your plants</h3>
                 <a href="{{ route('plant.add') }}" class="d-inline float-right btn btn-primary"><i class="fas fa-plus"></i></a>
             </div>
         </div>

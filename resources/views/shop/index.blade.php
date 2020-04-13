@@ -2,14 +2,14 @@
 
 @section('content')
     <div class="container">
+        <div class="row">
+            <div class="col-12 my-3">
+                <h3 class="d-inline border-left-custom">Shop</h3>
+                <a href="{{ route('shop.add') }}" class="d-inline float-right btn btn-primary"><i class="fas fa-plus"></i></a>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header clearfix">
-                        <h4 class="d-inline">Shop</h4>
-                    </div>
-
-                    <div class="card-body">
                         <ul class="nav nav-tabs" id="shopTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="item-tab" data-toggle="tab" href="#item-shop" role="tab"
@@ -79,9 +79,6 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
