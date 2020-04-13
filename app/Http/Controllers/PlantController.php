@@ -40,11 +40,12 @@ class PlantController extends Controller
 
         Plant::create([
             'name' => $request->input('name'),
+            'image' => $request->input('image'),
             'user_id' => Auth::user()->id,
             'genus_id' => $genus->id,
             'birth' => $request->input('birth'),
             'description' => $request->input('description'),
-            ]);
+        ]);
         return redirect(route('plant.list'));
     }
 }

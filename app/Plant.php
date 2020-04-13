@@ -8,7 +8,7 @@ class Plant extends Model
 {
 
     protected $fillable = [
-        'name', 'user_id', 'genus_id', 'birth', 'description'
+        'name', 'user_id', 'genus_id', 'birth', 'description', 'image'
     ];
 
     public function user() {

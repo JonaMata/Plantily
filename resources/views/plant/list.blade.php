@@ -15,8 +15,8 @@
                             @foreach($plants as $plant)
                                 <div class="col-sm-12 col-md-6 col-lg-4">
                                     <div class="card">
-                                        @if($plant->image())
-                                            <img class="card-img" src="{{ $plant->image() }}"
+                                        @if($plant->image)
+                                            <img class="card-img-top" src="{{ $plant->image }}"
                                                  alt="{{ $plant->name }}-image"/>
                                         @endif
                                         <div class="card-body">

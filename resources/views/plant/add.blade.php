@@ -15,8 +15,14 @@
                                        placeholder="Planty McPlant Face">
                             </div>
                             <div class="form-group">
+                                <label for="image">Image Url</label>
+                                <input type="url" class="form-control" id="image" name="image"
+                                       placeholder="https://imgur.com/plant.png">
+                            </div>
+                            <div class="form-group">
                                 <label for="description">Description</label>
-                                <textarea class="form-control" id="description" name="description" placeholder="The best plant ever!"></textarea>
+                                <textarea class="form-control" id="description" name="description"
+                                          placeholder="The best plant ever!"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="birth">Birth</label>
