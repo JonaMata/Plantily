@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => $plant->name])
 
 @section('content')
     <div class="container">
