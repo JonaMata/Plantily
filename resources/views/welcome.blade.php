@@ -7,7 +7,6 @@
                 <div class="col-lg-6 col-8 offset-md-3 offset-1 text-left">
                     <h1>Do you love your plants?</h1>
                     <p class="lead">
-                        Do you want to share them with the whole world? <br>
                         Join <b>MarketPlants</b> now and share the joy of plants with the rest of the world!
                     </p>
                     <hr>
@@ -16,7 +15,7 @@
                         Share your plants with the world and maybe even earn some money by selling seed or shoots on our marketplace.
                     </p>
                     <p class="lead">
-                        <a href="/home" class="btn btn-primary text-white btn-lg">
+                        <a href="/home" class="btn btn-primary btn-lg">
                             Join For Free
                         </a>
                     </p>

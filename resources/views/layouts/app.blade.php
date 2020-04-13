@@ -21,10 +21,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-0">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}" style="display: grid; grid-template-columns: auto auto">
-                    <img src="{{url('/images/logo.svg')}}" alt="MarketPlants logo" height="50">
+                    <img src="{{url('/images/logo.svg')}}" alt="MarketPlants logo" height="40">
                     <h1 id="navbar-brandname">
                         {{ config('app.name') }}
                     </h1>

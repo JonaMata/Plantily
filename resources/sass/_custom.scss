@@ -16,10 +16,14 @@
     padding: 10px 20px;
 }
 
+.btn-primary {
+    @extend .text-white;
+}
+
 #navbar-brandname {
     display: inline;
     line-height: 40px;
-    font-size: 50px;
+    font-size: 45px;
     align-self: end;
     margin: 0 0 0 10px;
 
