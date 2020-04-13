@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-2">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}" style="display: grid; grid-template-columns: auto auto">
                     <img src="{{url('/images/logo.svg')}}" alt="MarketPlants logo" height="40">
@@ -75,7 +75,7 @@
             </div>
         </nav>
 
-        <main>
+        <main class="pt-2">
             @yield('content')
         </main>
     </div>

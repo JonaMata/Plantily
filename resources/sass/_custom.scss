@@ -1,5 +1,6 @@
 .master-header {
-    height: calc(100vh - 90px);
+    margin-top: -10px;
+    height: calc(100vh - 60px);
     min-height: 500px;
     background-image: url('/images/plant-background-2.jpg');
     background-size: cover;
@@ -11,9 +12,13 @@
     }
 }
 
+.navbar {
+    z-index: 1;
+}
+
 .nav-item {
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 .btn-primary {
@@ -22,7 +27,7 @@
 
 #navbar-brandname {
     display: inline;
-    line-height: 40px;
+    line-height: 30px;
     font-size: 45px;
     align-self: end;
     margin: 0 0 0 10px;
@@ -30,4 +35,13 @@
     @media screen and (max-width: 900px) {
         display: none;
     }
+}
+
+#plant-image {
+    margin-top: -10px;
+    height: calc(100vh - 66px);
+    background-image: url('/images/plant-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

@@ -15,7 +15,7 @@
                         Share your plants with the world and maybe even earn some money by selling seed or shoots on our marketplace.
                     </p>
                     <p class="lead">
-                        <a href="/home" class="btn btn-primary btn-lg">
+                        <a href="/register" class="btn btn-primary btn-lg">
                             Join For Free
                         </a>
                     </p>
