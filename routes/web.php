@@ -59,14 +59,21 @@ Route::prefix('plant')->name('plant.')->middleware('auth')->group(function() {
     Route::get('delete', 'PlantController@delete')->name('delete');
 });
 
-Route::prefix('seed')->name('seed.')->group(function() {
-    Route::get('{seed}', 'SeedController@index')->name('index');
+Route::prefix('child')->name('child.')->group(function() {
+    Route::get('{child}', 'ChildController@index')->name('index');
     //Authenticated routes
     Route::middleware('auth')->group(function() {
-        Route::get('{seed}/edit', 'SeedController@edit')->name('edit');
-        Route::post('{seed}/edit', 'SeedController@store')->name('store');
-        Route::post('{plant}/create', 'SeedController@create')->name('create');
+        Route::get('{child}/edit', 'ChildController@edit')->name('edit');
+        Route::post('{child}/edit', 'ChildController@store')->name('store');
+        Route::post('{plant}/create', 'ChildController@create')->name('create');
     });
+});
+
+Route::prefix('shop')->name('shop.')->group(function() {
+    Route::get('', 'ShopController@index')->name('index');
+    Route::get('item/{item}', 'ShopController@item')->name('item');
+    Route::get('add', 'ShopController@add')->name('add');
+    Route::post('add', 'ShopController@create')->name('create');
 });
 
 Route::prefix('json')->name('json.')->group(function() {

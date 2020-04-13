@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSeedsTable extends Migration
+class CreateChildrenTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateSeedsTable extends Migration
      */
     public function up()
     {
-        Schema::create('seeds', function (Blueprint $table) {
+        Schema::create('children', function (Blueprint $table) {
             $table->id();
             $table->integer('plant_id');
             $table->foreign('plant_id')->references('id')->on('plants')->onDelete('cascade');
+            $table->integer('type');
             $table->integer('amount');
             $table->double('price');
             $table->text('description');
@@ -31,6 +32,6 @@ class CreateSeedsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('seeds');
+        Schema::dropIfExists('children');
     }
 }

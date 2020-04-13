@@ -5,28 +5,28 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <h4 class="card-header">Seed listing for {{ $seed->plant->name }}</h4>
+                    <h4 class="card-header">Seed listing for {{ $child->plant->name }}</h4>
                     <div class="card-body">
                         <table>
                             <tr>
                                 <th>Plant</th>
-                                <td><a href="{{ route('plant.show', ['plant' => $seed->plant]) }}">{{ $seed->plant->name }}</a></td>
+                                <td><a href="{{ route('plant.show', ['plant' => $child->plant]) }}">{{ $child->plant->name }}</a></td>
                             </tr>
                             <tr>
                                 <th>Owner</th>
-                                <td><a href="{{ route('user.index', ['user' => $seed->plant->user->username]) }}">{{ $seed->plant->user->username }}</a></td>
+                                <td><a href="{{ route('user.index', ['user' => $child->plant->user->username]) }}">{{ $child->plant->user->username }}</a></td>
                             </tr>
                             <tr>
                                 <th>Amount</th>
-                                <td>{{ $seed->amount }}</td>
+                                <td>{{ $child->amount }}</td>
                             </tr>
                             <tr>
                                 <th>Price</th>
-                                <td>€{{ number_format($seed->price, 2) }}</td>
+                                <td>€{{ number_format($child->price, 2) }}</td>
                             </tr>
                             <tr>
                                 <th>Description</th>
-                                <td>{{ $seed->description }}</td>
+                                <td>{{ $child->description }}</td>
                             </tr>
                         </table>
                     </div>
