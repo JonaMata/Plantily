@@ -29,8 +29,16 @@ Route::bind('plant', function($value) {
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/', function () {
+        return view('home');
+    });
+});
+
+Route::group(['middleware' => 'guest'], function() {
+    Route::get('/', function () {
+        return view('welcome');
+    });
 });
 
 Auth::routes();
