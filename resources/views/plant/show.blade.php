@@ -27,6 +27,44 @@
                                 <td>{{ $plant->genus->name }}</td>
                             </tr>
                         </table>
+                        <div class="row justify-content-center">
+                            <div class="GaugeMeter"
+                                 data-percent="{{ random_int(10, 90) }}"
+                                 data-append="%"
+                                 data-size="150"
+                                 data-width="15"
+                                 data-style="Arch"
+                                 data-text_size="0.22"
+                                 data-label="Health"
+                            ></div>
+                            <div class="GaugeMeter"
+                                 data-percent="{{ random_int(10, 90) }}"
+                                 data-append="%"
+                                 data-size="150"
+                                 data-width="15"
+                                 data-style="Arch"
+                                 data-text_size="0.22"
+                                 data-label="Humidity"
+                            ></div>
+                            <div class="GaugeMeter"
+                                 data-percent="{{ random_int(10, 90) }}"
+                                 data-append="%"
+                                 data-size="150"
+                                 data-width="15"
+                                 data-style="Arch"
+                                 data-text_size="0.22"
+                                 data-label="Nutrition"
+                            ></div>
+                            <div class="GaugeMeter"
+                                 data-percent="{{ random_int(10, 90) }}"
+                                 data-append="%"
+                                 data-size="150"
+                                 data-width="15"
+                                 data-style="Arch"
+                                 data-text_size="0.22"
+                                 data-label="Light"
+                            ></div>
+                        </div>
                     </div>
                     <div class="card-footer">
                         <a href="{{ route('plant.edit', ['plant' => $plant]) }}" class="btn btn-secondary">Edit</a>
