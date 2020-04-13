@@ -1,16 +1,15 @@
 <?php
 
-use Illuminate\Routing\Router;
+use App\Plant;
+use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\User;
-use App\Plant;
 
 /*
  * Model bindings
  */
 
-Route::bind('user', function($value) {
+Route::bind('user', function ($value) {
     return User::where('username', $value)->first();
 });
 
@@ -29,12 +28,6 @@ Route::bind('plant', function($value) {
 |
 */
 
-Route::group(['middleware' => 'auth'], function() {
-    Route::get('/', function () {
-        return view('home');
-    });
-});
-
 Route::group(['middleware' => 'guest'], function() {
     Route::get('/', function () {
         return view('welcome');
@@ -42,8 +35,6 @@ Route::group(['middleware' => 'guest'], function() {
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('user')->name('user.')->group(function () {
     Route::get('{user?}', 'UserController@index')->name('index');
