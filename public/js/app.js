@@ -4617,7 +4617,6 @@
 
             /***/
         }),
-
         /***/
         "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/jquery-ui-bootstrap/jquery.ui.theme.css":
         /*!**********************************************************************************************************************************************!*\
@@ -21764,8 +21763,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/c/Users/Jonathan/Documents/Dev/Uni/plantily/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/c/Users/Jonathan/Documents/Dev/Uni/plantily/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Repositories\Plantily\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Repositories\Plantily\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
